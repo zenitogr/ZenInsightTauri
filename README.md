@@ -1,3 +1,26 @@
+# ZenInsightTauri - project conecpt of ZenitoGR:
+
+I would like to create an android app that is 100% offline,
+
+that will give info and resources about anything that happens in the user's phone!
+
+## a tool for anyone to understand technology!
+
+what is permissions?
+
+what data facebook, twitter, messenger, viber collect?
+
+what is advertisement tracking?
+
+what is rcs? what is the phone app in android collecting?
+
+Etc!
+
+## big goal but my goal is to create a tool for user's to understand technology!
+
+## in order to use technology with the knowledge needed! (επεξεργασμένο)
+
+
 # Tauri + Vue + TypeScript
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
