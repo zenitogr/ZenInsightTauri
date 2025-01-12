@@ -1,4 +1,4 @@
-# ZenInsightTauri v0.0.2 (2024-03-19)
+# ZenInsightTauri v0.0.2 (2024-03-19) (only a concept right now, in active development)
 
 > Your offline privacy guide for Android
 
