@@ -1,69 +1,67 @@
-# ZenInsightTauri
+# ZenInsightTauri v0.0.2 (2024-03-19)
 
-> An offline-first Android application empowering users to understand their digital privacy and technology.
+> Your offline privacy guide for Android
 
-## Overview
+## What It Does
 
-ZenInsightTauri is a free, open-source educational tool that helps users understand:
-- App permissions and their implications
-- Data collection practices of popular apps
-- Advertisement tracking mechanisms
-- Mobile technologies (RCS, system apps, etc.)
-- Privacy best practices
+ZenInsightTauri helps you understand:
+- What apps do with your data
+- How permissions affect privacy
+- What tracking methods exist
+- How to protect your privacy
 
 ## Key Features
 
-- 🔒 100% Offline functionality
-- 📱 Native Android performance
-- 🎯 User-friendly explanations
-- 🔍 In-depth privacy analysis
-- 🌍 Internationalization support
+### 📱 App Privacy Guide
+- See what Facebook knows about you
+- Understand Instagram's tracking
+- Learn about TikTok's data collection
 
-## Technical Stack
+### 🔒 Permission Explorer
+- Camera permission explained
+- Location tracking details
+- Storage access implications
 
-### Frontend
-- Vue 3 + TypeScript
-- TailwindCSS
-- Shadcn/UI components
-- Vue Router
-- Vuex
-- Vue-i18n
+### 📚 Privacy Education
+- Ad tracking explained
+- Data collection methods
+- Privacy protection tips
 
-### Backend
-- Rust (Tauri)
-- Local-only storage
-- Zero external dependencies
+## Technical Details
 
-## Development Setup
-
-### Prerequisites
-- VS Code
-- Volar
-- Tauri
-- rust-analyzer
+### Built With
+- Vue.js + TypeScript (Frontend)
+- Rust + Tauri (Backend)
+- 100% Offline Storage
 
 ### Quick Start
-
-Install dependencies:
+```bash
+# Install
 npm install
 
-Start development server:
-npm run tauri dev
+# Develop
+cargo tauri android dev
 
-Build for Android:
-npm run tauri android build
+# Build
+cargo tauri android build
+```
 
-## Contributing
+## Why Choose Us?
+- 100% Offline
+- No tracking
+- Free forever
+- Open source
 
-We welcome contributions! Please see our [Development Documentation](docs/ZenInsightTauri-dev-doc.md) for detailed guidelines.
+## Get Started
+1. Download from releases
+2. Install on Android 8+
+3. No signup needed
+4. Start learning!
 
-## Vision
+## Join Us
+- Star on GitHub
+- Report issues
+- Contribute code
+- Share ideas
 
-ZenInsightTauri aims to bridge the knowledge gap between users and their technology, enabling informed decisions about digital privacy and security.
-
-## License
-
-[MIT License](LICENSE)
-
----
-Created with ❤️ by [ZenitoGR](https://github.com/zenitogr)
+[MIT License](LICENSE) • Made by [ZenitoGR](https://github.com/zenitogr)

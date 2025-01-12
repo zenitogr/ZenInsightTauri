@@ -1,145 +1,97 @@
-# ZenInsightTauri Development Documentation
+ZenInsightTauri - Development Guide - v0.0.2 (2024-03-19)
 
-## Project Overview
+# Quick Start Guide
 
-ZenInsightTauri is an offline-first Android application designed to educate users about their phone's technology, privacy, and data collection practices.
+## Setup Requirements
 
-## Core Objectives
+### 1. Basic Tools
+- Windows 10/11 with WSL2
+- Android Studio
+- VS Code
+- Node.js LTS
+- JDK 17+
 
-- Create a 100% offline educational tool
-- Provide clear explanations about phone permissions
-- Analyze and explain data collection practices of popular apps
-- Educate users about advertisement tracking
-- Explain mobile technologies (RCS, phone app behaviors, etc.)
+### 2. Development Tools
+```bash
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-## Technical Stack
+# Add Android targets
+rustup target add aarch64-linux-android armv7-linux-androideabi
 
-### Frontend
-- Vue.js with TypeScript
-- TailwindCSS
-- Shadcn/UI components
-- Vue Router for navigation
-- Vuex for state management
-- Vue-i18n for internationalization
-- Vite for build tooling
+# Install dependencies
+npm install
+```
 
-### Backend
-- Rust (Tauri)
-- Local storage only
-- No external API dependencies
+## Project Structure
 
-## Development Phases
+```
+src/              # Vue frontend
+  ├─ views/       # Main screens
+  ├─ components/  # Reusable parts
+  └─ i18n/        # Translations
 
-### Phase 1: Foundation (v0.0.1)
+src-tauri/        # Rust backend
+  ├─ src/         # Core logic
+  └─ android/     # Android specific
+```
 
-1. **Project Setup**
-   ```bash
-   cargo install create-tauri-app
-   cargo create-tauri-app
-   ```
+## Common Tasks
 
-2. **Basic Structure**
-   ```
-   src/
-   ├── components/
-   │   ├── PermissionExplainer/
-   │   ├── DataCollectionAnalyzer/
-   │   └── TechnologyGuide/
-   ├── views/
-   ├── store/
-   └── i18n/
-   ```
+### Development
+```bash
+# Start development
+cargo tauri android dev
 
-### Phase 2: Core Features
+# Build release
+cargo tauri android build
+```
 
-#### Permission Education Module
-- Comprehensive permission database
-- User-friendly permission explanations
-- Real-world usage examples
-- Privacy implications
+### Testing
+```bash
+# Run unit tests
+npm run test
 
-#### App Analysis Features
-- Facebook data collection practices
-- Twitter data tracking
-- Messenger permissions
-- Viber privacy analysis
-- Advertisement tracking explanations
+# Run e2e tests
+npm run test:e2e
+```
 
-#### Technology Education
-- RCS messaging explanation
-- Phone app behavior analysis
-- Mobile technology glossary
-- Privacy guides
+## Feature Implementation Guide
 
-## Implementation Guidelines
+### Adding New Content
+1. Create markdown file in `content/`
+2. Add translations in `i18n/`
+3. Create view component
+4. Add to navigation
 
-### Offline-First Architecture
+### Creating UI Components
+1. Use Shadcn/UI base
+2. Follow Vue composition API
+3. Add TypeScript types
+4. Include unit tests
 
-#### Local Storage Strategy
-- All educational content stored locally
-- No external API calls
-- Efficient data organization
+## Troubleshooting
 
-#### Content Management
-- Static content bundling
-- Markdown-based documentation
-- Embedded resources
+### Common Issues
+- **Build fails**: Check Android SDK path
+- **Emulator crashes**: Update Android Studio
+- **Hot reload not working**: Restart dev server
 
-### Privacy-Focused Development
+### Getting Help
+- Check GitHub issues
+- Join Discord community
+- Read Tauri docs
 
-#### Zero Data Collection
-- No analytics
-- No external services
-- No user tracking
-
-#### Transparency
-- Open source codebase
-- Clear documentation
-- Explained functionality
-
-## Getting Started
-
-### Prerequisites
-
-1. **Rust toolchain**
-   ```bash
-   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-   ```
-
-2. **Node.js and npm**
-   - Install as per your OS
-
-3. **Project setup**
-   ```bash
-   npm install
-   ```
-
-### Development Workflow
-
-1. **Run development server**
-   ```bash
-   npm run tauri dev
-   ```
-
-2. **Build for Android**
-   ```bash
-   npm run tauri android build
-   ```
-
-## Contributing
+## Best Practices
 
 ### Code Style
-- Follow Vue.js style guide
-- Use Rust formatting guidelines
-- Document all components
+- Use TypeScript strictly
+- Follow Vue composition API
+- Document all functions
+- Write unit tests
 
-### Pull Requests
-- Create feature branches
-- Include tests
-- Update documentation
-
-## Resources
-
-- [Project Repository](https://github.com/zenitogr/ZenInsightTauri)
-- [Tauri Documentation](https://tauri.app/)
-- [Vue.js Guide](https://vuejs.org/)
+### Git Workflow
+- Feature branches
+- Descriptive commits
+- PR templates
+- Code review checklist

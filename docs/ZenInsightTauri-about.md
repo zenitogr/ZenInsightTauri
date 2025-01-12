@@ -1,18 +1,37 @@
-ZenInsightTauri - About - v0.0.1 (2025-01-11)
+ZenInsightTauri - About - v0.0.2 (2024-03-19)
 
-**Project Concept by ZenitoGR:**
+# What is ZenInsightTauri?
 
-ZenInsightTauri is an Android app designed to operate 100% offline. Its primary goal is to provide users with information and resources about the activities and data usage on their phones. This tool aims to help anyone understand technology better.
+A free, offline Android app that helps you understand how your phone and apps use your data.
 
-**Key Features:**
-- Understand permissions
-- Learn what data apps like Facebook, Twitter, Messenger, and Viber collect
-- Discover what advertisement tracking is
-- Explore what RCS is and what data the phone app in Android collects
-- And more!
+## Main Features
 
-**Vision:**
-The project aims to create a tool that empowers users to understand and use technology with the necessary knowledge.
+### 1. App Permission Guide
+- Learn what each permission means
+- Examples:
+  - Why Instagram needs camera access
+  - Why WhatsApp needs contacts
+  - What "run at startup" actually does
 
-**Get Involved:**
-If you are interested in the ZenInsightTauri Project or want to collaborate/contribute, star the GitHub repo: [ZenInsightTauri GitHub](https://github.com/zenitogr/ZenInsightTauri)
+### 2. Popular Apps Privacy Guide
+- See what data popular apps collect
+- Examples:
+  - Facebook's location tracking
+  - Instagram's ad targeting methods
+  - TikTok's data collection practices
+
+### 3. Privacy Education
+- Simple explanations of complex topics
+- Examples:
+  - What is "anonymous data"?
+  - How do apps track you across websites?
+  - What happens to your deleted photos?
+
+## Our Promise
+- 100% offline - works without internet
+- No tracking or data collection
+- Free forever
+- Open source
+
+## Join Us
+Star our GitHub repo: [ZenInsightTauri](https://github.com/zenitogr/ZenInsightTauri)

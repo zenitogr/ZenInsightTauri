@@ -1,2 +1,6 @@
 1. ZenInsightTauri-about.txt is the about and info for the ZenInsightTauri project.
 2. ZenInsightTauri-design.txt is everything about the design and tech stack for the ZenInsightTauri project.
+3. ZenInsightTauri-dev-doc.md is the development documentation for the ZenInsightTauri project.
+5. readme.md is simply a promotional readme for the ZenInsightTauri project github page and git repo!
+
+all files have the version number increment in each edit on the first line with the currect date!
