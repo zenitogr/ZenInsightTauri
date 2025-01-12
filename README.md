@@ -52,7 +52,7 @@ cargo tauri android build
 - Free forever
 - Open source
 
-## Get Started
+## Get Started (in active development, below are the general instructions once we have a release!)
 1. Download from releases
 2. Install on Android 8+
 3. No signup needed
